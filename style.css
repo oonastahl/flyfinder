@@ -3,7 +3,6 @@
   --tausta: #F7F5F0;
   --oranssi: #F47721;
   --teksti: #263238;
-  --persikka: #FBE5D5;
 }
 
 body {
@@ -67,11 +66,6 @@ h3 {
   box-shadow: 0 2px 12px rgba(38, 50, 56, 0.06);
 }
 
-.navbar-brand {
-  color: var(--teksti);
-  font-size: 1.35rem;
-}
-
 /* alleviivaus */
 .navbar .nav-link {
   color: var(--teksti);
@@ -102,7 +96,10 @@ h3 {
   color: var(--oranssi);
 }
 
+
 .navbar-brand {
+  color: var(--teksti);
+  font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -194,9 +191,14 @@ h3 {
   max-width: 500px;
   border: none;
   border-radius: 24px;
-  background-color: #FFFFFF;;
+  background-color: #FFFFFF;
   box-shadow: 0 8px 28px rgba(38, 50, 56, 0.10);
   padding: 24px !important;
+  transition: box-shadow 0.2s ease;
+}
+
+.random-card:hover {
+  box-shadow: 0 12px 32px rgba(38, 50, 56, 0.14);
 }
 
 /* Arvotun maan nimi */
@@ -216,15 +218,6 @@ h3 {
   font-weight: 600;
   padding: 12px 24px;
   box-shadow: 0 4px 10px rgba(244, 119, 33, 0.2);
-}
-
-/* Hienovarainen korostus hiirellä */
-.random-card {
-  transition: box-shadow 0.2s ease;
-}
-
-.random-card:hover {
-  box-shadow: 0 12px 32px rgba(38, 50, 56, 0.14);
 }
 
 /* Lentohakulomakkeen viimeistely */
